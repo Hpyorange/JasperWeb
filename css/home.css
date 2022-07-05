@@ -456,6 +456,10 @@ p {
 	margin: 0 auto;
 	padding: 100px 20px;
 }
+
+#about p { text-align: start;
+}
+
 #about .col-left {
 	width: 250px;
 	height: 360px;
