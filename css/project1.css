@@ -1,0 +1,599 @@
+@import url('https://fonts.googleapis.com/css2?family=Neonderthaw&family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 10px;
+	font-family: 'Rubik', sans-serif;
+	scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+	height: .5rem;
+	width: 1rem;
+}
+ 
+::-webkit-scrollbar-track{
+	background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb{
+	background:linear-gradient(to top,#03a9f4,#f441a5,transparent);
+	border-radius: 2rem;
+}
+
+::-webkit-scrollbar-thumb:hover{
+	background:linear-gradient(to top,#C603F4,#F47E41,transparent);
+}
+
+body{
+	background-color: #05121A;
+    background-image: url(../img/project1/v3-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+a {
+	text-decoration: none;
+}
+
+.container {
+	min-height: 100vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.title {
+	font-size: 3rem;
+	font-weight: 500;
+	color: #2155CD;
+	margin-bottom: 10px;
+	letter-spacing: 0.2rem;
+}
+
+
+img {
+	height: 100%;
+	width: 100%;
+}
+
+.brand h1 img{
+	position: relative;
+	top: 12px;
+	width: 40px;
+	margin-right: 10px;
+}
+.brand h1 {
+	font-size: 3rem;
+	text-transform: uppercase;
+	color: white;
+}
+.brand h1 span {
+	color: #86EBD9;
+}
+
+.text{
+	font-size:1.8rem;
+}
+
+.mybtn {
+	display: inline-block;
+	padding: 10px 20px;
+	color: white;
+	background-color: #4A6EC7;
+	border: none;
+	border-radius: 8px;
+	font-size: 1.8rem;
+	font-weight: 500;
+	letter-spacing: 0.1rem;
+	margin-top: 30px;
+	transition: 0.3s ease;
+	transition-property: background-color, color;
+}
+
+.mybtn:hover {
+	background-color: #0038C2;
+}
+
+.subtitle{
+	color: #6B99FF;
+	font-size: 2rem;
+	font-weight: 500;
+}
+
+/* Start Header section */
+#header {
+	position: fixed;
+	z-index: 1000;
+	left: 0;
+	top: 0;
+	width: 100vw;
+	height: auto;
+}
+#header .header {
+	min-height: 8vh;
+	background-color: rgba(5, 12, 26, 0.24);
+	transition: 0.3s ease background-color;
+}
+#header .nav-bar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	height: 100%;
+	max-width: 1300px;
+	padding: 0 10px;
+}
+#header .nav-list ul {
+	list-style: none;
+	position: absolute;
+	background-color: rgb(5, 12, 30);
+	width: 100vw;
+	height: 100vh;
+	left: 100%;
+	top: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	z-index: 1;
+	overflow-x: hidden;
+	transition: 0.5s ease left;
+}
+#header .nav-list ul.active {
+	left: 0%;
+}
+#header .nav-list ul a {
+	font-size: 2.5rem;
+	font-weight: 500;
+	letter-spacing: 0.2rem;
+	text-decoration: none;
+	color: white;
+	text-transform: uppercase;
+	padding: 20px;
+	display: block;
+}
+#header .nav-list ul a::after {
+	content: attr(data-after);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) scale(0);
+	color: rgba(240, 248, 255, 0.021);
+	font-size: 13rem;
+	letter-spacing: 50px;
+	z-index: -1;
+	transition: 0.3s ease letter-spacing;
+}
+#header .nav-list ul li:hover a::after {
+	transform: translate(-50%, -50%) scale(1);
+	letter-spacing: initial;
+}
+#header .nav-list ul li:hover a {
+	color: #86EBD9;
+}
+#header .hamburger {
+	height: 60px;
+	width: 60px;
+	display: inline-block;
+	border: 3px solid white;
+	border-radius: 50%;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 100;
+	cursor: pointer;
+	transform: scale(0.8);
+}
+#header .hamburger:after {
+	position: absolute;
+	content: '';
+	height: 100%;
+	width: 100%;
+	border-radius: 50%;
+	border: 3px solid white;
+	animation: hamburger_puls 1s ease infinite;
+}
+#header .hamburger .bar {
+	height: 2px;
+	width: 30px;
+	position: relative;
+	background-color: white;
+	z-index: -1;
+}
+#header .hamburger .bar::after,
+#header .hamburger .bar::before {
+	content: '';
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	background-color: white;
+	transition: 0.3s ease;
+	transition-property: top, bottom;
+}
+#header .hamburger .bar::after {
+	top: 8px;
+}
+#header .hamburger .bar::before {
+	bottom: 8px;
+}
+#header .hamburger.active .bar::before {
+	bottom: 0;
+}
+#header .hamburger.active .bar::after {
+	top: 0;
+}
+/* End Header section */
+
+/* start cover section */
+#coverPage{
+	max-width: 1280px;
+	margin: 10vh auto 0 auto;
+	padding: 0 50px;
+	background-color: #E4EBF6;
+	background-image: url(../img/project1/bubble.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+#coverPage .title{
+	color: #694286;
+	font-weight: 700;
+	text-align: center;
+}
+#coverPage .cover{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+#coverPage .mybtn{
+	position: relative;
+	right: -10%;
+}
+#coverPage .project_img{
+	margin-top: 60px;
+	object-fit: cover;
+}
+/* end cover section */
+
+/* start brief section */
+#brief{
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 50px;
+	background: url(../img/project1/bg1.png) no-repeat;
+	background-size: cover;
+}
+
+#brief .brief{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+}
+
+
+#brief .title{
+	margin-bottom: 30px;
+	font-weight: 600;
+	text-align: left;
+}
+
+#brief .text{
+	margin-bottom: 20px;
+	text-align: left;
+}
+
+#brief .subtitle{
+	margin:30px 0 18px 0 ;
+	text-align: left;
+}
+
+/* End brief section */
+
+/* Design Process section */
+#designProcess{
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 50px;
+	background: url(../img/project1/bg2.png) no-repeat;
+	background-size: cover;
+}
+
+#designProcess .designProcess{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+}
+#designProcess .title{
+	margin-bottom: 40px;
+	font-weight: 600;
+	text-align: left;
+}
+
+#designProcess .text{
+	margin-top: 30px;
+	text-align: left;
+}
+
+#designProcess .phase1{
+	color:#93BF3F;
+	font-weight: 500;
+}
+
+#designProcess .phase2{
+	color:#00C9B1;
+	font-weight: 500;
+}
+
+#designProcess .phase3{
+	color:#2EA4C5;
+	font-weight: 500;
+}
+
+#designProcess .phase4{
+	color:#7C6DB0;
+	font-weight: 500;
+}
+/* End Design Process section */
+
+/* Discover section */
+
+#discover{
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 50px;
+	background: url(../img/project1/bg3.png) no-repeat;
+	background-size: cover;
+}
+
+
+#discover .title{
+	margin-bottom: 30px;
+	font-weight: 600;
+	text-align: left;
+	text-transform: uppercase;
+}
+
+#discover .text{
+	text-align: left;
+	margin-bottom: 20px;
+}
+
+#discover .subtitle{
+	margin:20px 0;
+	text-align: left;
+}
+
+#discover .discover1{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+}
+
+/* End Competitor Analysis section */
+
+
+
+@media only screen and (min-width: 768px) {
+	.subtitle{
+		font-size: 2.8rem;
+	}
+
+
+	.mybtn {
+		font-size: 2.4rem;
+		padding: 20px 60px;
+	}
+
+	#coverPage{
+		margin-bottom: 40px;
+		border-radius: 20px;
+	}
+
+	#coverPage .mybtn{
+		position: relative;
+		right: 0;
+	}
+
+	#brief{
+		margin-bottom: 40px;
+		border-radius: 20px;
+	}
+
+	#brief .title{
+		font-size: 4.8rem;
+	}
+
+
+	#brief .text{
+		font-size: 2.4rem;
+	}
+
+	#designProcess{
+		margin-bottom: 40px;
+		border-radius: 20px;
+	}
+
+	#designProcess .designProcess_img{
+		margin-top: 52px;
+	}
+
+	#designProcess .title{
+		font-size: 4.8rem;
+		margin-bottom: 60px;
+	}
+
+	#designProcess .text{
+		font-size: 2.4rem;
+		margin-top: 40px;
+	}
+
+	#discover{
+		margin-bottom: 40px;
+		border-radius: 20px;
+	}
+
+	#discover .title{
+		font-size: 4.8rem;
+	}
+
+	#discover .text{
+		font-size: 2.4rem;
+	}
+
+
+
+}
+@media only screen and (min-width: 1200px) {
+	/* header */
+	#header .hamburger {
+		display: none;
+	}
+	#header .nav-list ul {
+		position: initial;
+		display: block;
+		height: auto;
+		width: fit-content;
+		background-color: transparent;
+	}
+	#header .nav-list ul li {
+		display: inline-block;
+	}
+	#header .nav-list ul li a {
+		font-size: 1.8rem;
+	}
+	#header .nav-list ul a:after {
+		display: none;
+	}
+	/* End header */
+
+	/* cover */
+	#coverPage .cover{
+		flex-direction:row;
+		height: 80vh;
+		position: relative;
+		justify-content: center;
+		align-items: center;
+		background-color: rgba(255, 255, 255, 0.4);
+		border-radius: 40px;
+		backdrop-filter: blur(4px);	
+	}
+
+	#coverPage .title{
+		text-align: start;
+		font-size: 4rem;
+	}
+
+	#coverPage .col-left{
+		width: 50%;
+		padding: 55px;
+	}
+
+	#coverPage .col-right{
+		padding-right: 40px;
+	}
+
+
+	/* End cover */
+
+	/* brief */
+	#brief .brief{
+		flex-direction:row;
+		position: relative;
+	}
+
+	#brief .title{
+		text-align: start;
+		font-size: 5.5rem;
+		position: relative;
+		top: -80px;
+		margin: 0;
+	}
+
+	#brief .col-left{
+		width: 50%;
+		padding-right: 10%;
+	}
+
+	#brief .col-right{
+		width: 460px;
+	}
+
+	#brief .text{
+		line-height: 3.6rem;
+	}
+	/* End brief */
+
+	
+	/* Design Process */
+	#designProcess .designProcess{
+		flex-direction:row;
+		position: relative;
+	}
+
+	#designProcess .designProcess .col-left{
+		width: 50%;
+		padding-right: 10%;
+	}
+
+	#designProcess .designProcess .col-right{
+		width: 40%;
+	}
+	#designProcess .designProcess .title{
+		text-align: start;
+		font-size: 5.5rem;
+		position: absolute;
+		top: -80px;
+		margin: 0;
+	}
+
+	#designProcess .designProcess .text{
+		margin-top: 40px;
+		line-height: 4rem;
+	}
+
+
+	/* End Design Process */
+
+	/* Discover */
+	#discover .discover1{
+		flex-direction:row;
+		position: relative;
+	}
+
+	#discover .discover1 .col-left{
+		width: 50%;
+		padding-right: 10%;
+	}
+
+	#discover .discover1 .col-right{
+		width: 40%;
+		
+	}
+
+	#discover .discover1 .title{
+		text-align: start;
+		font-size: 5.5rem;
+		position: absolute;
+		top: -150px;
+		margin: 0;
+	}
+
+	#discover .discover1 .text{
+		margin-top: 40px;
+		line-height: 4.8rem;
+	}
+}
