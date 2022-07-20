@@ -365,7 +365,7 @@ img {
 }
 
 #discover .container{
-	height: auto;
+	min-height: auto;
 }
 
 #discover .discover{
@@ -376,7 +376,7 @@ img {
 }
 
 #discover .title{
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 	font-weight: 600;
 	text-align: left;
 	text-transform: uppercase;
@@ -393,6 +393,10 @@ img {
 	color:#93BF3F;
 }
 
+#discover .survey_img{
+	margin: 40px 0;
+}
+
 #discover .explan{
 	margin:20px 0;
 	text-align: left;
@@ -400,8 +404,8 @@ img {
 
 /* End discover section */
 
-/* UserTest section */
-#userTest{
+/* define section */
+#define{
 	max-width: 1280px;
 	margin: 0 auto;
 	padding: 50px;
@@ -409,27 +413,27 @@ img {
 	background-size: cover;
 }
 
-#userTest .container{
+#define .container{
 	height: auto;
 	align-items: flex-start;
 }
-#userTest .title{
+#define .title{
 	font-weight: 600;
 	text-align: left;
 	text-transform: uppercase;
 }
 
-#userTest .subtitle{
+#define .subtitle{
 	margin:20px 0;
 	text-align: left;
 	color:#93BF3F;
 }
 
-#userTest .survey_img{
-	margin: 40px 0;
-}
 
-#userTest .text{
+#define .insight_img{
+	margin:20px;
+}
+#define .text{
 	padding: 0 10px;
 }
 
@@ -447,6 +451,7 @@ img {
 
  	.text{
 		font-size: 2.4rem;
+		line-height: 4rem;
 	}
 	.mybtn {
 		font-size: 2.4rem;
@@ -493,13 +498,13 @@ img {
 	}
 
 
-
-	#userTest{
+	#define{
 		margin-bottom: 40px;
 	}
 
-	#userTest .text{
-		line-height: 4.8rem;
+
+	#define .insight_img{
+		margin:60px;
 	}
 	/*End  discover */
 
@@ -636,12 +641,19 @@ img {
 		text-align: start;
 		font-size: 5.5rem;
 		position: absolute;
-		top: -150px;
+		top: -50px;
 		margin: 0;
 	}
 
 	#discover .discover .text{
 		margin-top: 40px;
 		line-height: 4.8rem;
+	}
+	/* End Discover */
+
+	#define .insight_img{
+		position: relative;
+		left: 20%;
+		width: 50%;
 	}
 }
