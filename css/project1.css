@@ -358,6 +358,12 @@ img {
 	background-size: cover;
 }
 
+#discover .discover{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+}
 
 #discover .title{
 	margin-bottom: 30px;
@@ -376,31 +382,60 @@ img {
 	text-align: left;
 }
 
-#discover .discover1{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	text-align: center;
+
+
+/* End discover section */
+
+/* UserTest section */
+#userTest{
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 50px;
+	background: url(../img/project1/bg3.png) no-repeat;
+	background-size: cover;
+}
+#userTest .title{
+	font-weight: 600;
+	text-align: left;
+	text-transform: uppercase;
 }
 
-/* End Competitor Analysis section */
+#userTest .subtitle{
+	margin:20px 0;
+	text-align: left;
+}
 
+#userTest .survey_img{
+	margin: 40px 0;
+}
+
+#userTest .text{
+	padding: 0 10px;
+}
 
 
 @media only screen and (min-width: 768px) {
 	.subtitle{
 		font-size: 2.8rem;
 	}
+	.title{
+		font-size: 4.8rem;
+	}
 
-
+ 	.text{
+		font-size: 2.4rem;
+	}
 	.mybtn {
 		font-size: 2.4rem;
 		padding: 20px 60px;
 	}
 
-	#coverPage{
-		margin-bottom: 40px;
+	section{
 		border-radius: 20px;
+	}
+
+	#coverPage {
+		margin-bottom: 40px;
 	}
 
 	#coverPage .mybtn{
@@ -408,18 +443,9 @@ img {
 		right: 0;
 	}
 
+
 	#brief{
 		margin-bottom: 40px;
-		border-radius: 20px;
-	}
-
-	#brief .title{
-		font-size: 4.8rem;
-	}
-
-
-	#brief .text{
-		font-size: 2.4rem;
 	}
 
 	#designProcess{
@@ -432,28 +458,27 @@ img {
 	}
 
 	#designProcess .title{
-		font-size: 4.8rem;
 		margin-bottom: 60px;
 	}
 
 	#designProcess .text{
-		font-size: 2.4rem;
 		margin-top: 40px;
 	}
-
+	/* discover */
 	#discover{
 		margin-bottom: 40px;
-		border-radius: 20px;
 	}
 
-	#discover .title{
-		font-size: 4.8rem;
+
+
+	#userTest{
+		margin-bottom: 40px;
 	}
 
-	#discover .text{
-		font-size: 2.4rem;
+	#userTest .text{
+		line-height: 4.8rem;
 	}
-
+	/*End  discover */
 
 
 }
@@ -569,22 +594,22 @@ img {
 	/* End Design Process */
 
 	/* Discover */
-	#discover .discover1{
+	#discover .discover{
 		flex-direction:row;
 		position: relative;
 	}
 
-	#discover .discover1 .col-left{
+	#discover .discover .col-left{
 		width: 50%;
 		padding-right: 10%;
 	}
 
-	#discover .discover1 .col-right{
+	#discover .discover .col-right{
 		width: 40%;
 		
 	}
 
-	#discover .discover1 .title{
+	#discover .discover .title{
 		text-align: start;
 		font-size: 5.5rem;
 		position: absolute;
@@ -592,7 +617,7 @@ img {
 		margin: 0;
 	}
 
-	#discover .discover1 .text{
+	#discover .discover .text{
 		margin-top: 40px;
 		line-height: 4.8rem;
 	}
