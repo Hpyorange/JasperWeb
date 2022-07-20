@@ -358,6 +358,10 @@ img {
 	background-size: cover;
 }
 
+#discover .container{
+	height: auto;
+}
+
 #discover .discover{
 	display: flex;
 	flex-direction: column;
@@ -382,8 +386,6 @@ img {
 	text-align: left;
 }
 
-
-
 /* End discover section */
 
 /* UserTest section */
@@ -393,6 +395,11 @@ img {
 	padding: 50px;
 	background: url(../img/project1/bg3.png) no-repeat;
 	background-size: cover;
+}
+
+#userTest .container{
+	height: auto;
+
 }
 #userTest .title{
 	font-weight: 600;
