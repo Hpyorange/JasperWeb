@@ -250,7 +250,7 @@ p {
 
 /* Hero Section */
 #hero {
-	background-image: url(../img/home/HeroPic1.png);
+	background-image: url(../img/home/HeroPic.png);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position:center;
@@ -264,7 +264,7 @@ p {
 	display: flex;
 	width: 30px;
 	height: 30px;
-	right: 50%;
+	right: 47%;
 	border-left: 3px solid #86EBD9;
 	border-bottom: 3px solid #86EBD9;
 	border-radius: 0.5rem;
@@ -278,6 +278,7 @@ p {
 	padding: 0 50px;
 	justify-content: flex-start;
 }
+
 #hero h1 {
 	display: block;
 	width: fit-content;
@@ -321,6 +322,11 @@ p {
 	font-size: 2.4rem;
 }
 
+#hero .content{
+	display: flex;
+	flex-direction: column;
+}
+
 .lightInfin {
     color: #fff;
     outline: none;
@@ -344,9 +350,9 @@ p {
     animation: lighta 5s linear 2;
 }
 
-.welcome {
+#hero .welcome {
     position:absolute;
-    top: 75%;
+    top: 80%;
 	right: 0%;
     display:flex;
     width: 100%;
@@ -771,6 +777,10 @@ p {
 	#hero h2{
 		font-size: 5rem;
 	}
+
+	#hero .arrow{
+		right: 48.5%;
+	}
 	/* End Hero */
 
 
@@ -894,8 +904,30 @@ p {
 	#header .nav-list ul a:after {
 		display: none;
 	}
+
 	/* End header */
 
+	/* hero */
+	#hero .arrow{
+		right: 49.3%;
+	}
 
+	#hero .content{
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	#hero .col-left{
+		width: 40%;
+	}
+
+	#hero .hero_img{
+		position: relative;
+		left: 35%;
+		width: 90%;
+		
+	}
+	/* End hero */
 }
 /* End  Media Query For Desktop */
