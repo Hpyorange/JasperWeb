@@ -334,7 +334,7 @@ img {
 }
 
 #designProcess .phase1{
-	color:#93BF3F;
+	color:#F28C13;
 	font-weight: 500;
 }
 
@@ -390,7 +390,7 @@ img {
 #discover .subtitle{
 	margin:20px 0;
 	text-align: left;
-	color:#93BF3F;
+	color:#F28C13;
 }
 
 #discover .survey_img{
@@ -426,7 +426,7 @@ img {
 #define .subtitle{
 	margin:20px 0;
 	text-align: left;
-	color:#93BF3F;
+	color:#00C9B1;
 }
 
 
@@ -436,7 +436,11 @@ img {
 #define .text{
 	padding: 0 10px;
 }
-
+#define .question_img{
+	position: relative;
+	left: 20%;
+	width: 50%;
+}
 
 @media only screen and (min-width: 768px) {
 	.subtitle{
@@ -502,9 +506,16 @@ img {
 		margin-bottom: 40px;
 	}
 
-
 	#define .insight_img{
-		margin:60px;
+		position: relative;
+		left: 20%;
+		width: 50%;
+	}
+
+	#define .question_img{
+		position: relative;
+		left: 33%;
+		width: 30%;
 	}
 	/*End  discover */
 
@@ -558,8 +569,6 @@ img {
 	#coverPage .col-right{
 		padding-right: 40px;
 	}
-
-
 	/* End cover */
 
 	/* brief */
@@ -617,8 +626,6 @@ img {
 		margin-top: 40px;
 		line-height: 4rem;
 	}
-
-
 	/* End Design Process */
 
 	/* Discover */
@@ -633,16 +640,19 @@ img {
 	}
 
 	#discover .discover .col-right{
-		width: 40%;
-		
+		width: 40%;	
 	}
 
 	#discover .discover .title{
 		text-align: start;
-		font-size: 5.5rem;
-		position: absolute;
-		top: -50px;
-		margin: 0;
+	}
+
+	#discover .explan{
+		margin-top: 78px;
+	}
+
+	#discover .userTest{
+		margin:0 50px;
 	}
 
 	#discover .discover .text{
@@ -651,9 +661,10 @@ img {
 	}
 	/* End Discover */
 
-	#define .insight_img{
-		position: relative;
-		left: 20%;
-		width: 50%;
+	#define .define{
+		margin: 0 50px;
 	}
+
+
+
 }
