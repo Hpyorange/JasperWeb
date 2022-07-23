@@ -415,7 +415,6 @@ img {
 
 #define .container{
 	height: auto;
-	align-items: flex-start;
 }
 #define .title{
 	font-weight: 600;
@@ -429,7 +428,6 @@ img {
 	color:#00C9B1;
 }
 
-
 #define .insight_img{
 	margin:20px;
 }
@@ -440,6 +438,35 @@ img {
 	position: relative;
 	left: 20%;
 	width: 50%;
+}
+/* End define section */
+
+/* define1 section */
+#define1{
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 50px;
+	background: url(../img/project1/bg3.png) no-repeat;
+	background-size: cover;
+}
+
+#define1 .container{
+	height: auto;
+	align-items: flex-start;
+}
+
+#define1 .subtitle{
+	margin:20px 0;
+	text-align: left;
+	color:#00C9B1;
+}
+
+#define1 .persona_img{
+	margin-top: 20px;
+}
+
+#define1 .userJourney_img{
+	margin-bottom: 20px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -665,6 +692,8 @@ img {
 		margin: 0 50px;
 	}
 
-
+	#define1 .define1{
+		margin: 0 50px;
+	}
 
 }
