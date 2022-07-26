@@ -481,6 +481,7 @@ img {
 	background-size: cover;
 }
 
+
 #develop .subtitle{
 	margin:20px 0;
 	text-align: left;
@@ -503,7 +504,7 @@ img {
 }
 
 #develop1 .container{
-	height: auto;
+	min-height: auto;
 	align-items: flex-start;
 }
 
