@@ -103,7 +103,6 @@ img {
 }
 
 .subtitle{
-	color: #6B99FF;
 	font-size: 2rem;
 	font-weight: 500;
 }
@@ -380,6 +379,7 @@ img {
 	font-weight: 600;
 	text-align: left;
 	text-transform: uppercase;
+	color:#FF4820; 
 }
 
 #discover .text{
@@ -408,7 +408,7 @@ img {
 #define{
 	max-width: 1280px;
 	margin: 0 auto;
-	padding: 50px;
+	padding: 0 50px;
 	background: url(../img/project1/bg3.png) no-repeat;
 	background-size: cover;
 }
@@ -420,6 +420,7 @@ img {
 	font-weight: 600;
 	text-align: left;
 	text-transform: uppercase;
+	color: #05A08E;
 }
 
 #define .subtitle{
@@ -439,14 +440,14 @@ img {
 	left: 20%;
 	width: 50%;
 }
-/* End define section */
+/* End Define section */
 
-/* define1 section */
+/* Define1 section */
 #define1{
 	max-width: 1280px;
 	margin: 0 auto;
-	padding: 50px;
-	background: url(../img/project1/bg3.png) no-repeat;
+	padding: 0 50px 50px 50px;
+	background: url(../img/project1/bg2.png) no-repeat;
 	background-size: cover;
 }
 
@@ -468,6 +469,56 @@ img {
 #define1 .userJourney_img{
 	margin-bottom: 20px;
 }
+
+/* End Define1 section */
+
+/* Develop section */
+#develop{
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 50px;
+	background: url(../img/project1/bg2.png) no-repeat;
+	background-size: cover;
+}
+
+#develop .subtitle{
+	margin:20px 0;
+	text-align: left;
+	color:#2EA4C5;
+}
+
+#develop .style_img{
+	margin-top: 20px;
+}
+
+/* End Develop Section */
+
+/* Develop1 Section */
+#develop1{
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 0 50px;
+	background: url(../img/project1/bg2.png) no-repeat;
+	background-size: cover;
+}
+
+#develop1 .container{
+	height: auto;
+	align-items: flex-start;
+}
+
+#develop1 .subtitle{
+	margin:20px 0;
+	text-align: left;
+	color:#2EA4C5;
+}
+
+#develop1 .wireframe_img{
+	margin: 20px 0;
+}
+
+
+/* End Develop1 Section */
 
 @media only screen and (min-width: 768px) {
 	.subtitle{
@@ -527,10 +578,11 @@ img {
 	#discover{
 		margin-bottom: 40px;
 	}
-
-
+	/* End discover */
+	/* define */
 	#define{
 		margin-bottom: 40px;
+		padding: 50px;
 	}
 
 	#define .insight_img{
@@ -544,8 +596,14 @@ img {
 		left: 33%;
 		width: 30%;
 	}
-	/*End  discover */
 
+	#define1{
+		margin-bottom: 40px;
+	}
+
+	#develop{
+		margin-bottom: 40px;
+	}
 
 }
 @media only screen and (min-width: 1200px) {
@@ -695,5 +753,15 @@ img {
 	#define1 .define1{
 		margin: 0 50px;
 	}
+
+	#develop .develop{
+		margin: 0 50px;
+	}
+
+	#develop1 .develop1{
+		margin: 0 50px;
+	}
+
+
 
 }
