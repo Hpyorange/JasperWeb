@@ -517,10 +517,59 @@ img {
 #develop1 .wireframe_img{
 	margin: 20px 0;
 }
-
-
 /* End Develop1 Section */
 
+/* Prototype Section */
+#prototype{
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 0 50px;
+	background: url(../img/project1/bg2.png) no-repeat;
+	background-size: cover;
+}
+
+#prototype .container{
+	min-height: auto;
+	align-items: flex-start;
+}
+
+#prototype .subtitle{
+	margin:20px 0;
+	text-align: left;
+	color:#2EA4C5;
+}
+
+#prototype .prototype_img{
+	margin: 20px 0;
+}
+
+/* End Prototype Section */
+
+/* Iteration Section */
+
+#iteration{
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 0 50px;
+	background: url(../img/project1/bg2.png) no-repeat;
+	background-size: cover;
+}
+
+#iteration .container{
+	min-height: auto;
+	align-items: flex-start;
+}
+
+#iteration .subtitle{
+	margin:20px 0;
+	text-align: left;
+	color:#2EA4C5;
+}
+
+#iteration .iteration_img{
+	margin: 20px 0;
+}
+/* End Iteration Section */
 @media only screen and (min-width: 768px) {
 	.subtitle{
 		font-size: 2.8rem;
@@ -603,6 +652,18 @@ img {
 	}
 
 	#develop{
+		margin-bottom: 40px;
+	}
+
+	#develop1 {
+		margin-bottom: 40px;
+	}
+
+	#prototype{
+		margin-bottom: 40px;
+	}
+
+	#iteration{
 		margin-bottom: 40px;
 	}
 
@@ -763,6 +824,13 @@ img {
 		margin: 0 50px;
 	}
 
+	#prototype .prototype{
+		margin: 0 50px;
+	}
+
+	#iteration .iteration{
+		margin: 0 50px;
+	}
 
 
 }
