@@ -596,9 +596,52 @@ img {
 #deliver .deliver_img{
 	margin: 20px 0;
 }
-
-
 /* End Deliver Section */
+
+/* Final Thought Section */
+#finalThought{
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 50px;
+	background: url(../img/project1/bg2.png) no-repeat;
+	background-size: cover;
+}
+
+#finalThought .title{
+	font-weight: 600;
+	text-align: left;
+	text-transform: uppercase;
+	color: #00ff95;
+	margin-bottom: 20px;
+}
+
+#finalThought .thankYou_img{
+	margin: 20px 0;
+}
+/* End Final Thought Section */
+
+/* Footer Section */
+#footer .footer {
+	min-height: 80px;
+	flex-direction: column;
+	justify-content:center;
+	padding-bottom: 20px;
+}
+#footer h2 {
+	color: white;
+	font-weight: 500;	
+	font-size: 1.8rem;
+	letter-spacing: 0.1rem;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#footer p {
+	color: white;
+	font-size: 1.8rem;
+}
+
+/* End Footer Section */
 @media only screen and (min-width: 768px) {
 	.subtitle{
 		font-size: 2.8rem;
@@ -698,6 +741,17 @@ img {
 
 	#deliver{
 		margin-bottom: 40px;
+	}
+
+	#finalThought{
+		margin-bottom: 40px;
+	}
+
+	#footer .footer {
+		min-height: 80px;
+		flex-direction: row;
+		justify-content: space-around;
+		padding-bottom: 20px;
 	}
 
 }
@@ -866,6 +920,10 @@ img {
 	}
 
 	#deliver .deliver{
+		margin: 0 50px;
+	}
+
+	#finalThought .finalThought{
 		margin: 0 50px;
 	}
 
