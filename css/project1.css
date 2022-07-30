@@ -64,6 +64,7 @@ img {
 	width: 100%;
 }
 
+
 .brand h1 img{
 	position: relative;
 	top: 12px;
@@ -269,6 +270,7 @@ img {
 	margin-top: 60px;
 	object-fit: cover;
 }
+
 /* end cover section */
 
 /* start brief section */
@@ -287,7 +289,6 @@ img {
 	text-align: center;
 }
 
-
 #brief .title{
 	margin-bottom: 30px;
 	font-weight: 600;
@@ -303,6 +304,11 @@ img {
 	margin:30px 0 18px 0 ;
 	text-align: left;
 }
+
+#brief .brief_img{
+	margin: 20px 0;
+}
+
 
 /* End brief section */
 
@@ -351,6 +357,7 @@ img {
 	color:#7C6DB0;
 	font-weight: 500;
 }
+
 /* End Design Process section */
 
 /* Discover section */
@@ -413,9 +420,9 @@ img {
 	background-size: cover;
 }
 
-#define .container{
-	height: auto;
-}
+/* #define .container{
+	min-height: auto;
+} */
 #define .title{
 	font-weight: 600;
 	text-align: left;
@@ -452,7 +459,7 @@ img {
 }
 
 #define1 .container{
-	height: auto;
+	min-height: auto;
 	align-items: flex-start;
 }
 
@@ -605,6 +612,11 @@ img {
 	padding: 50px;
 	background: url(../img/project1/bg2.png) no-repeat;
 	background-size: cover;
+}
+
+#finalThought .container{
+	min-height: auto;
+	align-items: flex-start;
 }
 
 #finalThought .title{
