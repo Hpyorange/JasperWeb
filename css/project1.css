@@ -570,6 +570,35 @@ img {
 	margin: 20px 0;
 }
 /* End Iteration Section */
+
+/* Deliver Section */
+#deliver{
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 50px;
+	background: url(../img/project1/bg2.png) no-repeat;
+	background-size: cover;
+}
+
+#deliver .title{
+	font-weight: 600;
+	text-align: left;
+	text-transform: uppercase;
+	color: #7C6DB0;
+}
+
+#deliver .subtitle{
+	margin:20px 0;
+	text-align: left;
+	color:#54038F;
+}
+
+#deliver .deliver_img{
+	margin: 20px 0;
+}
+
+
+/* End Deliver Section */
 @media only screen and (min-width: 768px) {
 	.subtitle{
 		font-size: 2.8rem;
@@ -664,6 +693,10 @@ img {
 	}
 
 	#iteration{
+		margin-bottom: 40px;
+	}
+
+	#deliver{
 		margin-bottom: 40px;
 	}
 
@@ -829,6 +862,10 @@ img {
 	}
 
 	#iteration .iteration{
+		margin: 0 50px;
+	}
+
+	#deliver .deliver{
 		margin: 0 50px;
 	}
 
