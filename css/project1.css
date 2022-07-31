@@ -64,6 +64,16 @@ img {
 	width: 100%;
 }
 
+.page_container{
+ width: 100%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+.page_img{
+	width: 30%;
+}
 
 .brand h1 img{
 	position: relative;
@@ -112,6 +122,10 @@ img {
 	color: #6B99FF;
 	font-size: 2rem;
 	font-weight: 500;
+}
+
+.mb{
+	margin-bottom: 20px;
 }
 
 /* Start Header section */
@@ -251,6 +265,16 @@ img {
 	background-repeat: no-repeat;
 	background-position: center;
 }
+
+#coverPage .container{
+	min-height: 85vh;
+}
+
+#coverPage .page_container{
+	position: relative;
+	top: -60px;
+}
+
 #coverPage .title{
 	color: #694286;
 	font-weight: 700;
@@ -415,7 +439,7 @@ img {
 #define{
 	max-width: 1280px;
 	margin: 0 auto;
-	padding: 0 50px;
+	padding: 0 50px 50px 50px;
 	background: url(../img/project1/bg3.png) no-repeat;
 	background-size: cover;
 }
@@ -505,7 +529,7 @@ img {
 #develop1{
 	max-width: 1280px;
 	margin: 0 auto;
-	padding: 0 50px;
+	padding: 0 50px 50px 50px;
 	background: url(../img/project1/bg2.png) no-repeat;
 	background-size: cover;
 }
@@ -530,7 +554,7 @@ img {
 #prototype{
 	max-width: 1280px;
 	margin: 0 auto;
-	padding: 0 50px;
+	padding: 0 50px 50px 50px;
 	background: url(../img/project1/bg2.png) no-repeat;
 	background-size: cover;
 }
@@ -557,7 +581,7 @@ img {
 #iteration{
 	max-width: 1280px;
 	margin: 0 auto;
-	padding: 0 50px;
+	padding: 0 50px 50px 50px;
 	background: url(../img/project1/bg2.png) no-repeat;
 	background-size: cover;
 }
@@ -768,6 +792,10 @@ img {
 
 }
 @media only screen and (min-width: 1200px) {
+
+	.page_img{
+		width: 15%;
+	}
 	/* header */
 	#header .hamburger {
 		display: none;
@@ -814,6 +842,12 @@ img {
 
 	#coverPage .col-right{
 		padding-right: 40px;
+	}
+
+	#coverPage .page_container{
+		position:absolute;
+		bottom: -80vh;
+		right: -0.4vw;
 	}
 	/* End cover */
 
