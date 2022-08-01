@@ -440,7 +440,7 @@ img {
 	max-width: 1280px;
 	margin: 0 auto;
 	padding: 0 50px 50px 50px;
-	background: url(../img/project1/bg3.png) no-repeat;
+	background: url(../img/project1/bg2.png) no-repeat;
 	background-size: cover;
 }
 
@@ -478,7 +478,7 @@ img {
 	max-width: 1280px;
 	margin: 0 auto;
 	padding: 0 50px 50px 50px;
-	background: url(../img/project1/bg2.png) no-repeat;
+	background: url(../img/project1/bg3.png) no-repeat;
 	background-size: cover;
 }
 
@@ -530,7 +530,7 @@ img {
 	max-width: 1280px;
 	margin: 0 auto;
 	padding: 0 50px 50px 50px;
-	background: url(../img/project1/bg2.png) no-repeat;
+	background: url(../img/project1/bg3.png) no-repeat;
 	background-size: cover;
 }
 
@@ -582,7 +582,7 @@ img {
 	max-width: 1280px;
 	margin: 0 auto;
 	padding: 0 50px 50px 50px;
-	background: url(../img/project1/bg2.png) no-repeat;
+	background: url(../img/project1/bg3.png) no-repeat;
 	background-size: cover;
 }
 
@@ -634,7 +634,7 @@ img {
 	max-width: 1280px;
 	margin: 0 auto;
 	padding: 50px;
-	background: url(../img/project1/bg2.png) no-repeat;
+	background-image: linear-gradient(to bottom, #FFFEFF 0%, #D7FFFE 100%);
 	background-size: cover;
 }
 
