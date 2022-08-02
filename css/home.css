@@ -459,6 +459,7 @@ p {
 
 /* End Hero Section */
 
+/* Mid Section */
 #mid {
 	background-image: url(../img/home/mid.png);
 	background-size: cover;
@@ -485,7 +486,7 @@ p {
     bottom: 0px;
     animation: square 15s linear infinite;
 }
-/* 为每一个方块设置不同的位置、大小、动画延迟时间、动画时长、背景色 */
+
 .bg-squares li:nth-child(1){
     left: 10%;
 }
@@ -549,15 +550,8 @@ p {
 }
 
 
-@keyframes square {
-    0%{
-        transform: translateY(0);
-    }
-    100%{
-        transform: translateY(-120vh) rotate(600deg);
-    }
-}
 
+/* End Mid Section */
 
 /* About Section */
 
@@ -845,6 +839,15 @@ p {
 		to {
 		  transform: translateY(-30px) rotate(-45deg);
 		}
+}
+
+@keyframes square {
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(-120vh) rotate(600deg);
+    }
 }
 /* End Keyframes */
 
