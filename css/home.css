@@ -375,7 +375,7 @@ p {
 }
 
 #animate span {
-    animation: appear 2s 1;
+    animation: appear 1.8s forwards;
 }
 
 
@@ -454,7 +454,6 @@ p {
 #animate span:nth-child(19) {
     animation-delay: 5.3s;
 }
-
 
 
 /* End Hero Section */
@@ -822,16 +821,16 @@ p {
 }
 
 @keyframes appear {
-    from {
+    0% {
         opacity: 0;
         visibility: hidden;
         filter: blur(20px);
         transform: scale(2);
     }
 
-    to {
+    100% {
         visibility: visible;
-        opacity: 1;
+		opacity: 1;
     }
 }
 
