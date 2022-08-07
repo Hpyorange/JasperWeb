@@ -682,7 +682,6 @@ p {
 	height: 300px;
 	overflow: hidden;
 	position: relative;
-	top: -40px;
 }
 
 
@@ -760,9 +759,7 @@ p {
 /*End contact Section */
 
 /* Footer */
-/* #footer {
-	background-color: #0A0F26;
-} */
+
 #footer .footer {
 	min-height: 80px;
 	flex-direction: column;
