@@ -644,7 +644,6 @@ p {
 	width: 80%;
 	margin: 20px auto;
 	overflow: hidden;
-	border-radius: 10px;
 }
 #projects .project-info {
 	padding: 30px;
@@ -683,6 +682,7 @@ p {
 	height: 300px;
 	overflow: hidden;
 	position: relative;
+	top: -20px;
 }
 
 
@@ -896,6 +896,14 @@ p {
 	}
 	#projects .all-projects .project-img {
 		height: 100%;
+	}
+
+	#projects .project-img{
+		top:0;
+	}
+
+	#projects .project-img img{
+		object-fit: cover;
 	}
 	/* End Project */
 
