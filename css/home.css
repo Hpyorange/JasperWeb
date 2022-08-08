@@ -688,6 +688,7 @@ p {
 #projects .project-img img {
 	transition: 0.3s ease transform;
 	object-fit: contain;
+	background-position: top;
 	opacity: 0.9;
 }
 #projects .project-item:hover .project-img img {
@@ -711,7 +712,6 @@ p {
 	z-index: 1;
 }
 #contact .contact-items {
-	/* max-width: 400px; */
 	width: 100%;
 }
 
@@ -898,7 +898,6 @@ p {
 
 	#projects .project-img img{
 		object-fit: cover;
-		background-position: top;
 	}
 	/* End Project */
 
