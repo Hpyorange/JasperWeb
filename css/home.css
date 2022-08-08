@@ -684,7 +684,7 @@ p {
 }
 #projects .project-img img {
 	transition: 0.3s ease transform;
-	/* object-fit: contain; */
+	object-fit: contain;
 	opacity: 0.9;
 }
 #projects .project-item:hover .project-img img {
@@ -892,9 +892,9 @@ p {
 		height: 100%;
 	}
 
-	/* #projects .project-img img{
+	#projects .project-img img{
 		object-fit: cover;
-	} */
+	}
 	/* End Project */
 
 	/* About */
