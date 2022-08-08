@@ -688,8 +688,10 @@ p {
 #projects .project-img img {
 	transition: 0.3s ease transform;
 	object-fit: contain;
-	background-position: top;
+	position: relative;
+	top: -20px;
 	opacity: 0.9;
+
 }
 #projects .project-item:hover .project-img img {
 	transform: scale(1.1);
@@ -898,6 +900,7 @@ p {
 
 	#projects .project-img img{
 		object-fit: cover;
+		top: 0;
 	}
 	/* End Project */
 
