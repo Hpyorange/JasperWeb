@@ -898,6 +898,7 @@ p {
 
 	#projects .project-img img{
 		object-fit: cover;
+		background-position: top;
 	}
 	/* End Project */
 
