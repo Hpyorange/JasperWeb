@@ -794,6 +794,10 @@ img {
 	.page_img{
 		width: 15%;
 	}
+
+	.title{
+		font-size:5rem;
+	}
 	/* header */
 	#header .hamburger {
 		display: none;
@@ -857,7 +861,6 @@ img {
 
 	#brief .title{
 		text-align: start;
-		font-size: 5.5rem;
 		position: relative;
 		top: -80px;
 		margin: 0;
@@ -894,9 +897,9 @@ img {
 	}
 	#designProcess .designProcess .title{
 		text-align: start;
-		font-size: 5.5rem;
-		position: absolute;
-		top: -80px;
+		font-size: 5rem;
+		position: relative;
+		top: -20px;
 		margin: 0;
 	}
 
