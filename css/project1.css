@@ -792,7 +792,7 @@ img {
 @media only screen and (min-width: 1200px) {
 
 	.page_img{
-		width: 15%;
+		width: 10%;
 	}
 
 	.title{
@@ -850,6 +850,9 @@ img {
 		position:absolute;
 		bottom: -80vh;
 		right: -0.4vw;
+	}
+	#coverPage .page_img{
+		width: 7%;
 	}
 	/* End cover */
 
