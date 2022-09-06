@@ -857,12 +857,19 @@ p {
 	}
 
 	/* Hero */
+
 	#hero h1 {
-		font-size: 7rem;
+		font-size: 6rem;
 	}
 
 	#hero h2{
-		font-size: 5rem;
+		font-size: 4.8rem;
+	}
+
+	#hero .content{
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
 	}
 
 	#hero .arrow{
@@ -870,11 +877,12 @@ p {
 	}
 
 	#hero .col-right{
+		width: 50%;
 		display: flex;
 		justify-content: center;
 	}
 	#hero .hero_img{
-		width: 70%;
+		width: 74%;
 	}
 
 
@@ -1008,12 +1016,6 @@ p {
 	/* hero */
 	#hero .arrow{
 		right: 49.3%;
-	}
-
-	#hero .content{
-		flex-direction: row;
-		align-items: center;
-		justify-content: space-between;
 	}
 
 	#hero .col-left{
