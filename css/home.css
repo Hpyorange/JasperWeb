@@ -881,10 +881,6 @@ p {
 		display: flex;
 		justify-content: center;
 	}
-	#hero .hero_img{
-		width: 74%;
-	}
-
 
 	/* End Hero */
 
