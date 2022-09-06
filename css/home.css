@@ -325,6 +325,7 @@ p {
 #hero .content{
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 }
 
 .lightInfin {
@@ -351,13 +352,12 @@ p {
 }
 
 #hero .welcome {
+	width: 100%;
     position:absolute;
     top: 80%;
 	right: 0%;
     display:flex;
-    width: 100%;
     justify-content: center;
-    align-items: center;
 }
 
 #animate{
@@ -868,6 +868,16 @@ p {
 	#hero .arrow{
 		right: 48.5%;
 	}
+
+	#hero .col-right{
+		display: flex;
+		justify-content: center;
+	}
+	#hero .hero_img{
+		width: 70%;
+	}
+
+
 	/* End Hero */
 
 
@@ -892,9 +902,6 @@ p {
 		height: 100%;
 	}
 
-	/* #projects .project-img img{
-		object-fit: cover;
-	} */
 	/* End Project */
 
 	/* About */
