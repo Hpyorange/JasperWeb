@@ -276,7 +276,7 @@ p {
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 0 50px;
-	justify-content: flex-start;
+	justify-content: space-between;
 }
 
 #hero h1 {
