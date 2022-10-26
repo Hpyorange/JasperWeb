@@ -59,6 +59,7 @@ p {
 	font-weight: 400;
 	letter-spacing: 0.05rem;
 }
+
 .section-title {
 	font-size: 4rem;
 	font-weight: 400;
@@ -917,6 +918,12 @@ p {
 	}
 	#projects .all-projects .project-img {
 		height: 100%;
+	}
+
+	#coding.container{
+		min-height: auto;
+		justify-content: start;
+		padding: 0 0 100px 0 ;
 	}
 
 	/* End Project */
