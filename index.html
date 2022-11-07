@@ -13,23 +13,32 @@
   <section id="header">
     <div class="header container">
       <div class="nav-bar">
-        <div class="brand">
-          <a href="#hero">
-            <h1><img src="img/home/Logo-small.png" alt="logo" &nbsp><span> J</span>asper <span>C</span>heng</h1>
+
+        <div>
+          <a href="#hero" class="brand">
+            <img src="img/home/Logo-small.png" alt="logo">
+            <h1> <span> J</span>asper <span>C</span>heng</h1>
           </a>
         </div>
+
         <div class="nav-list">
+
           <div class="hamburger">
             <div class="bar"></div>
           </div>
+
           <ul>
             <li><a href="#hero" data-after="Home">Home</a></li>
             <li><a href="#about" data-after="About">About Me</a></li>
             <li><a href="#projects" data-after="Projects">Projects</a></li>
             <li><a href="#contact" data-after="Contact">Contact Me</a></li>
+            <li><a href="javascript:;" type="button" data-after="language" id="switch">EN/中文</a></li>
           </ul>
+
         </div>
+
       </div>
+
     </div>
   </section>
   <!-- End Header -->
@@ -124,8 +133,8 @@
     <section id="projects">
       <div class="projects container">
         <div class="projects-header">
-          <h1 class="section-title">Recent <span>Projects</span></h1>
-          <h2 class="section-title"><span>Ui/Ux</span> Projects</h2>
+          <h1 class="section-title" id="projectHeader">Recent <span>Projects</span></h1>
+          <h2 class="section-title" id="subHeader1"><span>Ui/Ux</span> Projects</h2>
         </div>
         <div class="all-projects">
           <div class="project-item">
@@ -170,7 +179,7 @@
 
       <div class="projects container" id="coding">
         <div class="projects-header">
-          <h2 class="section-title "><span>Coding</span> Projects</h2>
+          <h2 class="section-title" id="subHeader2"><span>Coding</span> Projects</h2>
         </div>
         <div class="all-projects">
           <div class="project-item">
@@ -216,26 +225,26 @@
     <section id="contact">
       <div class="contact container">
         <div>
-          <h1 class="section-title">Contact <span>info</span></h1>
+          <h1 class="section-title" id="contactHeader">Contact <span>info</span></h1>
         </div>
         <div class="contact-items">
           <div class="contact-item">
             <div class="icon"><img src="img/home/PhoneIcon.png" /></div>
-            <div class="contact-info">
+            <div class="contact-info" id="phone">
               <h1>Phone</h1>
               <h2>+1(437)788-1280</h2>
             </div>
           </div>
-          <div class="contact-item">
+          <div class="contact-item" >
             <div class="icon"><img src="img/home/EmailIcon.png" /></div>
-            <div class="contact-info">
+            <div class="contact-info"id="email">
               <h1>Email</h1>
               <h2>jaspercheng2022@gmail.com</h2>
             </div>
           </div>
-          <div class="contact-item">
+          <div class="contact-item" >
             <div class="icon"><img src="img/home/LocationIcon.png" /></div>
-            <div class="contact-info">
+            <div class="contact-info" id="location">
               <h1>Location</h1>
               <h2>Toronto,Canada</h2>
             </div>
@@ -249,8 +258,11 @@
     <section id="footer">
       <div class="footer container">
 
-        <div class="brand">
-          <h1><img src="img/home/Logo-small.png" alt="logo"><span>J</span>asper <span>C</span>heng</h1>
+        <div>
+          <a href="#hero" class="brand">
+            <img src="img/home/Logo-small.png" alt="logo">
+            <h1> <span> J</span>asper <span>C</span>heng</h1>
+          </a>
         </div>
 
         <p>Copyright &copy; 2022 Jasper Cheng</p>
