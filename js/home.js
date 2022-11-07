@@ -42,11 +42,16 @@ const switchLan = () =>{
 	const animate = document.querySelector('#animate')
 
 	const aboutContent1 = document.querySelector('#about .section-title')
+	const aboutH2 = document.querySelector('#about h2')
+	const aboutMainContent = document.querySelector('#about p')
 	const aboutBtn = document.querySelector('#about a')
 	
 	const project = document.querySelector('#projectHeader')
 	const projectSub1=document.querySelector('#subHeader1')
 	const projectSub2=document.querySelector('#subHeader2')
+	const projectBtn1 = document.querySelector('#projectBtn1')
+	const projectBtn2 = document.querySelector('#projectBtn2')
+	const projectBtn3 = document.querySelector('#projectBtn3')
 
 	const ContactHeader=document.querySelector('#contactHeader');
 	const phone =document.querySelector('#phone')
@@ -66,11 +71,16 @@ const switchLan = () =>{
 		animate.style.visibility = 'visible'
 
 		aboutContent1.innerHTML='关于<span>我</span>'
+		aboutH2.textContent='UI/UX设计师 & 前端开发者'
+		aboutMainContent.textContent=`持有计算机与科学的学士学位,以及多伦多大学UI/UX训练营和编程训练营的证书;精通绝大多数的设计软件与前端开发语言例如Abode suite, Figma, HTML5, CSS, JavaScript, Bootstrap, jQuery, Node js 等... 我认为解决用户问题最重要的是理解用户的需求与障碍,从而能帮助他们获得更好的用户体验。我擅长设计与制作，美观与实用并存的用户界面。工作方面脚踏实地，积极进取，态度认真，敢于尝试与学习新鲜事物，渴望获得更多的成长机会！`
 		aboutBtn.textContent='简历下载'
 
 		project.innerHTML='近期<span>作品</span>'
 		projectSub1.innerHTML='<span>UI/UX</span>作品'
 		projectSub2.innerHTML='<span>编程</span>作品'
+		projectBtn1.textContent='更多...'
+		projectBtn2.textContent='更多...'
+		projectBtn3.textContent='更多...'
 
 		ContactHeader.innerHTML='联系<span>方式</span>'
 		phone.innerHTML='<h1>电话</h1><h2>13488696656</h2>'
@@ -90,11 +100,20 @@ const switchLan = () =>{
 		wel.innerHTML=`Welcome To My Universe`
 
 		aboutContent1.innerHTML='about <span>me</span>'
+		aboutH2.textContent='UI/UX Designer & Front End Developer'
+		aboutMainContent.textContent=`with B.S. in computer science and a certificate from UofT SCS UX/UI Boot Camp. Skilled in most Adobe suite
+		software, Figma, HTML5, CSS, JavaScript, Bootstrap, and jQuery. Strengthened in user problem solving and
+		believed that understanding the needs and frustrations is the key to improving user experience. Specializing
+		in creating beautiful and functional websites and digital interfaces, I am a very passionate designer who
+		always wants to grow, learn, and explore something new.`
 		aboutBtn.textContent='Download Resume'
 
 		project.innerHTML='Recent <span>Projects</span>'
 		projectSub1.innerHTML='<span>UI/UX</span> Projects'
-		projectSub1.innerHTML='<span>Coding</span> Projects'
+		projectSub2.innerHTML='<span>Coding</span> Projects'
+		projectBtn1.textContent='Read More'
+		projectBtn2.textContent='Read More'
+		projectBtn3.textContent='Read More'
 
 		ContactHeader.innerHTML='Contact <span>info</span>'
 		phone.innerHTML='<h1>Phone</h1><h2>+1(437)788-1280</h2>'
