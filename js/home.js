@@ -61,10 +61,10 @@ const switchLan = () =>{
 	const toZh = ()=>{
 		nav1.textContent='主页'
 		nav2.textContent='关于我'
-		nav3.textContent='项目'
+		nav3.textContent='作品'
 		nav4.textContent='联系方式'
-		heroContent1.textContent='嗨，'
-		heroContent2.textContent='我叫'
+		heroContent1.innerHTML='嗨，'
+		heroContent2.textContent='我是'
 		heroContent3.textContent='程乐章'
 		heroContentBtn.textContent='作品集'
 		wel.innerHTML='欢迎来到我的宇宙'
@@ -135,5 +135,16 @@ const switchLan = () =>{
 
 
 }
+
+// function langugeToggle() {
+	
+// 	let lang = document.querySelector("#page").getAttribute("lang"); 
+// 	if(lang == 'en'){
+
+// 		lang.setAttribute("lang", 'zh'); 
+// 	}else{
+// 		lang.setAttribute("lang", "en"); 
+// 	}
+// }
 
 switchLanguage.addEventListener('click',switchLan);
