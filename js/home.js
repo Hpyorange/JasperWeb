@@ -72,7 +72,7 @@ const switchLan = () =>{
 
 		aboutContent1.innerHTML='关于<span>我</span>'
 		aboutH2.textContent='UI/UX设计师 & 前端开发者'
-		aboutMainContent.textContent=`持有计算机与科学的学士学位,以及多伦多大学UI/UX训练营和编程训练营的证书;精通绝大多数的设计软件与前端开发语言例如Abode suite, Figma, HTML5, CSS, JavaScript, Bootstrap, jQuery, Node js 等... 我认为解决用户问题最重要的是理解用户的需求与障碍,从而能帮助他们获得更好的用户体验。我擅长设计与制作，美观与实用并存的用户界面。工作方面脚踏实地，积极进取，态度认真，敢于尝试与学习新鲜事物，渴望获得更多的成长机会！`
+		aboutMainContent.textContent=`持有计算机与科学的学士学位,以及多伦多大学UI/UX训练营和编程训练营的证书;精通绝大多数的设计软件与前端开发语言例如Adobe suite, Figma, HTML5, CSS, JavaScript, Bootstrap, jQuery, Node js 等... 我认为解决用户问题最重要的是理解用户的需求与障碍,从而能帮助他们获得更好的用户体验。我擅长设计与制作，美观与实用并存的用户界面。工作方面脚踏实地，积极进取，态度认真，敢于尝试与学习新鲜事物，渴望获得更多的成长机会！`
 		aboutBtn.outerHTML='<a href="resume-zh.pdf" download="resume-zh.pdf" class="cta lightInfin">简历下载</a>'
 
 		project.innerHTML='近期<span>作品</span>'
